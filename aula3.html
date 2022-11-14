@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         console.log('Dárik Vieira');
+
+var nome = 'Darik Baiense';
+console.log(nome);
+
+
+var idade = 23;
+console.log(idade + 10); //33
+
+var salario1 = 1000;
+console.log(salario1*2); //2000
+
+var salario01 = 100;
+var salario02 = 200;
+console.log(salario01+salario02); //300
+
+//Redeclarando a variavel//
+var salario1 = 2000;
+console.log(salario1); //2000
+//-------------------------------//
+
+var nome = 'Darik Vieira Baiense';
+console.log(nome);
+
+console.log(nome.length); //length faz a contagem dos caracteres 
+
+console.log('Darik'.length); //A string nem precisa está dentro de uma váriavel   
+
+console.log('Vieiraaaaaa'.length); //length faz a contagem dos caracteres 
+
+console.log(nome.toUpperCase()); //Deixa as letras maiuscula
+
+console.log(nome.toLowerCase()); //Deixa as letras minusculas
+
+console.log(nome.indexOf('rik')); //Metodo indexOf retorna o valor que vc procura n string
+
+console.log(nome.replace('Darik','Natalia')); //Metodo Replace ele vai substituir 
+
+console.log(nome.slice(2,5)); //Metodo slice ele vai retornar uma fatia da string
+
+//--------------------Teste----------------//
+
+var jogo = 'Xadrez';
+
+console.log(jogo.length); //6
+
+console.log(jogo.toUpperCase()); //XADREZ
+
+console.log(jogo.toLowerCase()); //xadrez
+
+console.log(jogo.slice(0,3)); //Xad
+
+console.log(jogo.replace('dre','DRE')); //XaDREz
+
+console.log(jogo.indexOf('re')); //3
+
+
+
+var casa = '  Apartamento   ';
+
+console.log(casa.length); //16
+
+console.log(casa.replace('tam','tem')); //  Apartemento
+
+console.log(casa.indexOf('tam')); //6
+
+console.log(casa.trim()); //Apartamento
+
+console.log(casa.toUpperCase()); // APARTAMENTO  
+
+console.log(casa.slice(2,5)); //Apa
+
+//---------Concatenação--------------//
+
+var canalYoutube = '   aprendendo Javascript   ';
+console.log(canalYoutube);
+
+console.log(canalYoutube.trim()); //Metodo trim retira os espaços da string
+
+var autor = 'Gerson';
+
+console.log('Estou ' + canalYoutube.trim() + ' Com Gerson '); //Concatenando string 
+
+console.log(`Eu estou ${canalYoutube.trim()} com ${autor}`); //Concatenando string forma mais facil
+
+//----------Teste concatenação------------//
+var memoria = 'ram'
+var pc = 'computador'
+var my = 'tem'
+
+console.log(`Meu ${pc} ${my} 16 gigas de memoria ${memoria}`); //Meu computador tem 16 gigas de memoria ram
+
+console.log('Meu '+ pc + my + ' 16 gigas de memoria' + memoria); //Meu computadortem 16 gigas de memoriaram
+
+
+//----------Operadores matemáticos------------//
+
+console.log(20+5); //25
+console.log(25+3); //28
+console.log(20-2-4); //14
+console.log(2*3); //6
+console.log(10/2); //5
+console.log(10%2); //0
+console.log(10%3); //1 //retorna o valor restante de uma divisão 3+3+3=9 falta 1 pra 10
+
+var a = 1;
+a = a + 1;
+
+console.log(a++); // 2 acrescenta no proximo print
+console.log(a); //3
+console.log(++a); // 4 //acrescenta já 
+
+var b = 10;
+b = 10 + 2;
+
+console.log(b); //12
+console.log(++b); //13
+console.log(b++); //13
+console.log(b); //14
+
+//----------Booleanos (True or False)------------//
+var a = true;
+console.log(true); //true
+var b = false;
+console.log(false); //false
+
+//----------Booleanos (< ou > menor ou maior )------------//
+console.log('3 < 5',3 < 5); //3 < 5 true
+console.log('3 > 5', 3 > 5); //3 > 5 false
+
+//----------Booleanos (<= / >= maior ou igual, menor ou igual)------------//
+console.log('5 >= 5',5 >= 5);  // 5 >= 5 true
+console.log('5 <= 6', 5 <= 6); //5 <= 6 true
+console.log('5 <= 3', 5 <= 3); //5 <= 3 false
+
+//----------Booleanos (!= diferente)------------//
+console.log('10 != 10',10 != 10); //10 != 10 false
+
+//----------Booleanos (== igual)------------//
+console.log('4 == 4',4 == 4); //4 == 4 true
+console.log('5 == 4',5 == 4); //5 == 4 false
+
+//----------Booleanos  com string (== igual)------------//
+var nome1 = 'Darik';
+var nome2 = 'Vieira';
+console.log('nome1 == nome2', nome1 == nome2); //nome1 == nome2 false
+console.log('nome1 != nome2', nome1 != nome2); //nome1 != nome2 true
+
+//----------Booleanos  com string (=== é uma comparação mais forte)------------//
+console.log('4 == 4',4 == 4); //true
+console.log('4' === 4); //false
+
+//exercicio//
+var boot = '  computador lerdo  '
+var botao = 'Meu'
+var e = 'é'
+var tm = 'tem'
+var num = 42
+console.log(boot.trim()); //computador lerdo
+
+console.log(boot.length); //20
+
+console.log(boot.slice(4,5));
+
+console.log(boot.replace('computador','Programador')); //  Programador lerdo  
+
+console.log(boot.indexOf('puta')); //5
+
+console.log(`${botao.trim()} ${boot.trim()} ${e} muito lerdo `); //Meu computador lerdo é muito lerdo
+
+console.log(`Darik tem o ${boot.trim()}`); //Darik tem o computador lerdo
+
+console.log(`Darik vieira ${tm} o sapato bonito e calça ${num}`); //Darik vieira tem o sapato bonito e calça 42
+
+//----------Booleanos  com string ( ! e !! negação )------------//
+
+var a = (false);
+var b = (true);
+
+console.log('!a',!a); //!a true
+console.log('!!a',!!a); //!!a false
+console.log('!null',!null); //!null true
+console.log('!!null',!!null); //!!null false
+console.log(!undefined); //true
+console.log(!!undefined); //false
+console.log(!''); //true
+console.log(!!''); //false
+
+//---------Operador ( end (&&) )------------//
+//Todas as expressoes tem que ser verdadeira dai ele retorna a ultima
+console.log('darik' && 4 && '' && 30);
+console.log(0 && 'darik' && 20 && 'vieira'); //0
+console.log(2<3 && 3<1); //false
+console.log(3>2 && 5>4); //true
+console.log('darik' && 'vieira' && 'vida'); //vida
+
+//---------Operador ( ou (||) )------------//
+//procura por uma unica verdadeira mesmo se toda for falsa ele retorna  a primeira que ve  
+//se todas forem falsas ele retorna a ultima falsa
+
+console.log(null || 'programador a bordo'); //programador a bordo
+console.log(null || 'darik' || ''); //darik
+console.log(null || '' || 0); //0
+console.log('darik' ||'vieira' || 'vida'); //darik
+console.log(0 || 'darik' || 20 || 'vieira'); //darik
+//---------condicionais ( If (Testa uma condição) )------------//
+
+
+if (true);{
+    console.log('Verdade');
+}
+
+if (!false){
+    console.log('Falso');
+}
+
+if (5<10){
+    console.log('Darik lindo');
+}
+
+if (!null){
+    console.log('Darik feioso');
+}
+
+var nome = 20 ;
+if ( nome > 10) {
+    console.log('Numero menor');
+}
+
+var nome = 'Darik';
+if (nome = 'Darik'){
+    console.log('Darik vieira Baiense');
+}
+
+var num = 20;
+var num2 = 30;
+if (num > num2 ){
+    console.log('Numero divisivel');
+} else if ( num <= num2){
+    console.log('num <= num2');
+}
+
+if (10 < 2){
+    console.log('É menor');
+}else if (10 > 2){
+    console.log('É maior')
+}
+
+var numero2 = 20 
+if (numero2 /2){
+    console.log('divisivel por 2');
+} else if (numero2 /3){
+    console.log('divisivel por 3');
+}
+
+//---------Operador ternário----------//
+var idade = 16
+console.log(idade >= 18 ?'Maior de idade' : 'Menor de idade');
+
+var cor = 'azul'
+    switch (cor) {
+        case 'verde':
+            console.log('Cor verde');            
+            break;
+        case 'roxo':
+            console.log('Cor roxo');
+            break;
+        case 'laranja':
+            console.log('Cor azul');
+            break;
+        default:  //se não cair em nenhum cai nesse 
+            console.log('Cor invalida')
+            break;
+    }
+
+var idade10 = '23'
+    switch (idade10){
+        case '23':
+            console.log('Tem 23 anos');
+            break;
+        case '22':
+            console.log('Tem 22 anos');
+            break;
+    }
+
+
+switch ('roxo'){
+    case 'rosa':
+    case 'azul':
+    case 'verde':
+        console.log('cores');
+        break;
+    
+    case 'Darik':
+    case '33':
+    case 'vieira':
+        console.log('Esse é o Darik');
+        break;
+    default:
+        console.log('Não é ninguem');
+        break;
+}
+
+// -------------Arrey-----------//
+
+var numeros3 = [1,2,3,4,5,6,7,8,9,88,77,67]
+
+console.log(numeros3[2]); 3
+console.log(numeros3[4]); 5
+console.log(numeros3.length); //total do arrey 12
+
+console.log(numeros3.pop()); // retira e retorna ultimo numero do arrey 67
+console.log(numeros3); //(11) [1, 2, 3, 4, 5, 6, 7, 8, 9, 88, 77]
+
+console.log(numeros3.slice(2,4)); // retorna uma fatia do arrey (2) [3, 4]
+
+//join junta todos os valores e transforma em uma string
+console.log(numeros3.join('-')); //1-2-3-4-5-6-7-8-9-88-77
+
+
+var nomes = [
+    'Darik',23,'Guarapari',1999
+]
+console.log(nomes.push('Vieira')); // insere um novo elemento em um arrey
+console.log(nomes);
+
+console.log(nomes.includes('Guarapari')); //verifica se tem ou não tal elemento do arrey e retorna um valor boleano
+
+console.log(nomes.indexOf(1999)); //retorna a posição de um arrey
+console.log(nomes.indexOf('japones')); //se não achar ele retorna -1
+
+var arrey1 = [1,2,3]
+var arrey2 = ['Darik','Vieira','Baiense']
+console.log(arrey1.concat(arrey2)); //juntando dois arrey
+
+console.log(arrey2.concat(arrey1)); // concat só alternando a ordem do arrey 
+
+console.log(arrey2.concat(arrey1).concat([4,3,4,])); //concatenando sem variavel
+
+console.log([arrey1,arrey2]); //concatenando tambem // [Array(3), Array(3)]
+console.log([...arrey1,...arrey2]); //spreed ele vai exibir os valores do arrey // [1, 2, 3, 'Darik', 'Vieira', 'Baiense']
+
+console.log (nomes); //vai buscar os elementos do arrey // Darik 23 Guarapari
+var nome = nomes[0];
+var ano = nomes[1];
+var local = nomes [2];
+console.log(nome,ano,local);
+
+
+var [nome,idade, ,ano] = nomes; //Darik 23 1999 // atras do sinal de = não é Darik 23 1999
+console.log(nome,idade,ano);
+
+
+
+
+
+    </script>
+</body>
+</html>

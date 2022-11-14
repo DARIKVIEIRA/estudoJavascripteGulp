@@ -1,0 +1,564 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //operadores logicos
+        console.log(4 + 10);
+        console.log(50 - 20 + 40);
+        console.log(5 * 2);
+        console.log(100 / 20);
+
+        var a = 50
+        var b = 20
+        console.log(a + b);
+
+        console.log( 10 % 2);
+        console.log(10 %4);
+         
+        var b = 5
+        b = b + 10;
+        console.log(b);
+
+        b++;
+        console.log(b)
+
+        //boleanos 
+
+        var a = true;
+        console.log(a)
+        var b = false;
+        console.log(b);
+
+        console.log(3<5); //verificando se 3 é menor q 5
+
+        console.log(3>5);
+
+        console.log(5>=5);
+
+        console.log(10!=10); //10 é diferente de 10
+         
+        console.log(10!=5); 
+
+        console.log(4==4); //comparando se um valor é igual ao outro
+        console.log(4==5);
+
+        //comparação com strings
+
+        var nome1 = 'Darik';
+        var nome2 = 'Vieira';
+        console.log('nome1 == nome2',nome1 == nome2); //comparação
+
+        console.log('nome1 != nome2',nome1 != nome2); // saber se é igual
+        
+        console.log ('4'===4); //comparação mais profunda,compara até se é numero estring
+
+        //operadores logicos
+
+        var b =true;
+        var a =false;
+        console.log(b);
+        console.log(a);
+
+        var b =true;
+        var a =false;
+        console.log(!b);
+        console.log(!a);
+
+        console.log(!!a); //negar duas vezes
+
+        console.log(null);
+        console.log(!null); //estou negando 
+        
+        console.log(!!0)
+        console.log(!0)
+
+        console.log ('10 != 5', 10 !=5);//saber se um é diferente de outro
+        console.log('10 != 10', 10 != 10); //saber se um é diferente de outro
+        //sinal de diferente !=
+        console.log('5 <= 7', 5 <= 4);//saber se é maior ou igual outro
+        console.log('5 != 7', 5<= 7);//saber se é menor ou igual outro
+        //sinal de maior ou igual !=
+        console.log('3 > 5', 3 > 5);//se esse numero é maior
+        console.log('3 < 5', 3 < 5);
+        // sinal de iual ==
+        console.log('4 == 4', 4==4);
+        console.log('4==5',4==5);
+        //sinal de == e != com string
+        var nome1 ='Darik';
+        var nome2 = 'Vieira';
+
+        console.log('nome1 == nome2',nome1 == nome2);
+        console.log('nome1 != nome2', nome1 != nome2);
+
+         //sinal de === igual não compara só o valor mas compara o tipo
+         console.log('4 == 4', '4'==4);
+         console.log('4 === 4', '4'===4);
+        
+        //boleano fazendo a negação
+
+        var a = true;
+        var b = false;
+
+        console.log(a);
+        console.log(b);
+          //negando com ! ele agora fica false e true
+        var a = true;
+        var b = false;
+
+        console.log(!a);
+        console.log(!b);
+
+        //dupla negação ele vai retornar ao valor de origem
+        var a = true;
+        var b = false;
+
+        console.log(!!a); //vai negar true e negar false e virar true
+        console.log(!!b);
+        //null,underfined,'',false,0 é por padrão false//
+        console.log(null) //null
+        console.log(!null) //true (porque eu neguei ele)
+        console.log(!!null) //falso (neguei tres x)
+        console.log(!!undefined);
+        console.log(!!'');
+        console.log(!!0)
+
+        //operador End (&&)
+        //ele verifica as expressões e ve se todos são verdadeiros
+        //se for ele retorna a ultima expressão
+        // se não for ele retorna o falso
+        //ele vai invalidar onde deu falso e não prosegue
+        // todas as expressões tem que ser verdadeiras, e se for ele retorna a ultima
+
+
+        console.log(10 && 'texto' && 'Programador');
+
+        console.log(null && 'Programador'); //retorna null porque verificou q ele é falso
+
+        console.log('Passa' && 0 && 'Dev'); //retorna o 0 porque ele é falso
+
+        console.log('Passou' && null);
+
+        console.log('Passou' && 0);
+
+        console.log("false" && 100 && '' && 'teste'
+        && null); // ele passou a primeira e morreu na segunda porque '' é falso
+        
+        console.log(10 > 5 && 7 < 10);
+         //e uma expressão boleana de afirmação que retorna (7 < 10) um valor boleano true or false
+
+         console.log(10 > 5 && 10 > 11);
+         //retorna false porque é uma expressão boleana
+         
+         //Operador || ou 
+         //ele procura por uma unica verdadeira
+         // se todas elas forem falsas e tiver uma verdadeira ele retorna essa verdadeira
+         // toda expressão é dada como verdadeira porque tem 1 verdadeira
+         // e se todas for falsa ele retorna a ultima falsa
+
+         console.log(null || 'Programador a Bordo');
+         //ele etorna o verdadeiro que achar
+         console.log(null || 'Programador a Bordo'|| 26);
+        // ele retorna o primeiro que ve então novamente ele retorna
+        // 'programador a bordo' e  nem analisa o 26
+        console.log('' || null || 26);
+        //ele vai retornar o 26 o unico numero positivo
+        console.log('Programador a Bordo' || 'Teste');
+        //ele retorna o primeiro que for verdadeiro
+
+        //ou || com expressão boleana
+        //expressão boleana retorna valor boleano
+
+        console.log(10 > 5 || 10 < 11); //true
+        console.log(10 > 5 || 10 > 11); // true
+        console.log(10 < 5 || 10 > 11); // false pq as duas expresões são falsos
+        console.log( null || false || 0); //se todas for falsas ele retorna o ultimo falso
+        
+        // juntando as duas expressões
+        console.log('Programador' && 2050 || '' && 26);
+        // ele vai verificar as expressoes e retornar o ultimo verdadeiro 2050
+
+        console.log('Programador' && 2050 && 'a Bordo' || 0);
+        // ele vai comparar um com o outro e vai retornar o a bordo porque é verdadeiro e o 0 já é falso
+        
+        console.log(null || !'' && 'Programador');
+        // o end vai retornar o ultimo valor verdadeiro que é programador
+        
+        //CONDICIONAIS //
+        // (If) testa uma condição e se ela for verdadeira ele executa o codigo
+        //Dentro do () vem uma expressão boleana
+        // e se a condição for verdadeira todo codigo que está dentro do {} vais ser excutado
+
+        if (true) {
+            console.log('Hello World');
+        } // vai executar
+
+        if (false) {
+            console.log('Hello World');
+        } // não vai executar porque é verdadeiro e não falso
+        
+        if (!false) {
+            console.log('Hello World');
+        } // eu fiz a negação do falso ele viroui verdadeiro e excutou
+    
+        if (3 > 4){
+            console.log('3 < 4');
+        } // não vai printar
+
+        if (3 < 4){
+            console.log('3 < 4');
+        } // vai printar
+
+        if (3 <= 4){
+            console.log('3 <= 4');
+        } // vai printar
+
+        var textoVazio = '';
+        if (textoVazio){
+            console.log('textoVazio');
+        } //não vai imprimir porque a variavel é falsa '' vazia
+
+
+        var textoVazio = !'';
+        if (textoVazio){
+            console.log('textoVazio');
+        } // vai imprimir porque eu neguei a variavel vazia com ! e ele se tornou verdadeiro
+
+        if (10 > 20) {
+            console.log('10 > 20');
+        } else if (10 <= 12) {  // ele vai imprimir 10 <=12 porque é verdadeiro
+            console.log('10 <=12');
+        } else {
+            console.log('Darik');
+        }
+
+        if (10 > 20){
+            console.log('10 > 20');
+        } else if (10 > 12) {
+            console.log ('10 > 20');
+        } else {
+            console.log('Todos falsos');
+        } // se nenhum deles for verdadeiro ele pula para o else
+
+         // OPERADORES TERNÁRIOS (?) e (:)
+         // ternario é uma forma curta de if e else
+         // ele verifica se uma operação é verdadeira se sim ele executa um codidigo se n executa outro
+         // não precisa ser um texto pode ser uma função para executar tambem 
+
+         console.log(true ? 'Darik' : 'Vieira')
+         //se ele for veradeiro (?) faz 'Darik' se não (:) faz outra coisa 'Vieira'
+         console.log(!true ? 'Darik' : 'Vieira')
+         // ele esta negando e executando vieira porque do (:)
+         
+         var idade = 18;
+         console.log(idade >= 18 ? 'Maior de idade' : 'Menor de idade');
+         //  se (?) ele for maior de 18 imprimi 'Maior de idade'
+         // se não (:) imprimi 'Menor de idade'
+
+         var idade = 12;
+         console.log(idade >= 18 ? 'Maior de idade' : 'Menor de idade');
+         //  se (?) ele for maior de 18 imprimi 'Maior de idade'
+         // se não (:) imprimi 'Menor de idade'
+
+         var idade = 12
+         console.log (idade >= 12 ? 'menor de idade ' : 'maior de idade');
+
+         //SWITCH CASE
+         // Outra forma de if e else
+         //  os Case testa os valores retornado
+        // case (caso)
+        // break (parar)
+        // switch () o valor que quero testar
+          var cor = 'amarelo'
+          switch(cor){
+            case 'azul':
+                console.log('Cor azul');
+                break;
+            case 'vermelho':
+                console.log('Cor vermelho');
+                break ;
+            case 'amarelo':
+                console.log('Cor amarela');
+                break;
+          }
+
+
+          var cor = 'azul'
+          switch(cor){
+            case 'azul':
+                console.log('Cor azul');
+                break;
+            case 'vermelho':
+                console.log('Cor vermelho');
+                break ;
+            case 'amarelo':
+                console.log('Cor amarela');
+                break;
+          }
+
+          var cor = 'Verde'
+          switch(cor){
+            case 'azul':
+                console.log('Cor azul');
+                break;
+            case 'vermelho':
+                console.log('Cor vermelho');
+                break ;
+            case 'amarelo':
+                console.log('Cor amarela');
+                break;
+            default:
+                console.log('Cor rosa')
+                break;
+          } //Caso não seja nenhum ele imprime o default
+           
+          //da para fazer com varios case com o (:) se
+          switch('vermelho'){
+            case 'vermelho':
+            case 'laranja':
+            case 'amarelo':
+                console.log('Cor quente');
+                break;
+
+            case 'verde':
+            case 'azul':
+            case 'roxo':
+                console.log('Cor fria');
+                break;
+            default:
+                console.log('Cor não identificada');
+                break;
+          }
+         
+
+          // video https://www.youtube.com/watch?v=vrSEt5J4q2Y (aula 1)
+          
+          //https://www.youtube.com/watch?v=IEx_e4M2vt4&list=PLbA-jMwv0cuWbas947cygrzfzHIc7esmp&index=2 (aula 2)
+        
+          var idade = 18 
+        console.log (idade >= 18 ? 'Maior de idade ' : 'Menor de idade');
+
+        var idade = 10
+        var idade1 = 8
+        console.log(idade > idade1 ? 'Maior de idade' : 'Menor de idade');
+        
+        var nome = 'Darik'
+        console.log(nome !='Darik' ? 'Bem vindo Darik' : 'Utilizador desconhecido');
+
+
+        var cor = 'roxo'
+        switch (cor){
+            case 'azul':
+                console.log('Cor azul');
+                break;
+            case 'roxo':
+                console.log('Cor roxa detectada');
+                break;
+            case 'verde':
+                console.log('Cor verde');
+                break;
+        }
+
+      var numero = 23
+      switch(numero) {
+        case 24 :
+            console.log ('Numero 24');
+            break;
+        case 23 :
+            console.log('Numero 23');
+            break;
+      }
+        
+
+      var nome = 'Brasilia'
+      switch(nome){
+        case 'Vieira':
+        case 'Baiense':
+        case 'Guarapari':
+            console.log ('Dados do Dárik');
+            break;
+
+        case 'Brasilia':
+        case 'Natalia':
+        case 'Karl':
+            console.log('Dados da Natalia');
+            break;
+      }
+       
+      //arrey é um tipo de valor que permite guardar diversos outros valores
+      // comeca com [] e dentro pode colocar todos valores separado por ,
+
+       var numero = [5,10,20,30,40];
+       console.log(numero);
+
+       console.log(numero[3]);
+       console.log(numero[4]);
+
+       console.log(numero.length); //descobrir a quantidades de numeros tem no arrey
+
+        //metodo (POP) ele remove o ultimo elemento do arrey e devolve pra voce 
+        
+        console.log(numero.pop());
+        console.log(numero);
+        
+        //Metodo (Slice) ele devolve uma fatia de um Arrey
+        
+        console.log(numero.slice(1,3));
+        console.log(numero.slice(1,3));
+
+        //metodo JOIN ele junta todos os valores do arrey e transforma em uma string
+        // só dizer qual é o separados
+
+        console.log(numero.join('--'));
+        console.log(numero.join('-'));
+        console.log(numero.join(' '));
+
+        var usuario = [
+            'Darik',
+            '22',
+            'Desenvolvedor front end',
+            '2022',
+            'Brasileiro'
+        ];
+        console.log(usuario);
+
+      //Metodo PUSH vai colocar um novo elemento no fim do arrey
+      usuario.push('Es');
+      console.log(usuario);
+
+       //Metodo Includes como verificar se tal valor está dentro de meu arrey
+       // ele retorna verdadeiro ou falso
+    console.log(usuario.includes('Brasileiro'));
+    console.log(usuario.includes('Japones'));
+      //IndexOF retorna a posicão do arrey
+      console.log(usuario.indexOf('2022'));
+      console.log(usuario.indexOf('japones')); //quando não encontrar ele retorna -1
+
+      //forma Juntar (Concat) dois arreys
+
+      var arr1 = [3,2,1];
+      var arr2 = ['Programador','a','Bordo'];
+      //[3,2,1 'Programador','a','Bordo']
+      var resultado = arr1.concat(arr2).concat(['Darik','Vieira','Baiense']); //esse concat ele pode atribuir varos arrey ao mesmo tempo
+      console.log(resultado);
+       
+      //forma mais facil de juntar arrey
+      console.log([arr1,arr2]);
+      //usando o spred (...) para atribuir também os valores do arrey
+      // juntar os arreys em um só fazer o arrey se espalhar dentro
+      console.log([...arr1,...arr2]); //agora tem um arrey com 6 elementos
+      //colocando tambem o arry
+      console.log([...arr1,...arr2,...['Darik','Vieira','Baiense']]); 
+
+      //pegar determinado valor do arrey
+     console.log(usuario);
+     var nome = usuario[0];
+     console.log(nome);
+
+     var ano = usuario [1];
+     var profissão = usuario [2];
+     console.log(ano,profissão);
+     //destructuring no arrey
+       // diz que o nome na posição 0 pega no usuario
+       //dia que idade na posição pega o valor da idade no usuario
+      // variavel ano esta na posição 3 e dai pulamos com (, ,)
+      //só é Arrey se o valor estiver do lado direito do lado de =
+      // copia o valor de acordo com a posição
+     var [nome,idade, ,ano] = usuario ; //essa forma é parecida com a de cima
+     console.log(nome,idade,ano);
+ ________________________________________________________________________
+
+         // LOOPS ( FOR)
+        //Executa um codigo se for verdadeira  
+
+//for (var contador = 0; contador < 10 ; contador ++){
+    //console.log(contador);
+
+
+
+//criamos um Arrey aleatorio
+//length vai trazer a quantidade de elemento do arrey
+//var darik = [9,11,1999,22];
+    for (var contador = 0; contador < darik.length;
+     contador ++){
+        console.log(`${contador} - ${darik[contador]}`);
+    }
+
+//forma de percorrer por fora 
+
+//var i = 0;
+for (; i < darik.length;) {
+    console.log(`Sem valor inicial  inceremento: ${
+        darik[i]}`);
+    i++;
+    }
+
+
+
+var contador1 = 0
+//while (contador1 < 6);{
+    console.log(contador1);
+contador1++;
+
+
+var idade = 18;
+         console.log(idade >= 18 ? 'Maior de idade' : 'Menor de idade');
+
+
+
+    //Aula de LOOP 09/11/
+
+
+    var contador = 0 ;         //Contador é = 0
+    while (contador < 5) {     //Enquanto o contador for <5 ele vai entrar o codigo
+        console.log(contador); //Quer que imprime contador 
+        ++contador;            //Vai ficar incrementando toda vez que o codigo contador < 5 for verdadeiro
+    }
+
+//__________________________________________________________//
+
+   var contador = 0; 
+   while (contador < 5){   //Enquanto while for menor que 5 ele executa
+    if (contador === 4) {  //Mas se o contador for === 4 ele 
+        break; //Para 
+    }
+    console.log(contador); //Quer que imprime contador
+    contador++;            //Vai ficar incrementando toda vez que o codigo contador < 5 for verdadeiro
+   } 
+
+//__________________________________________________________//
+
+   var contador = 0;
+   while (contador < 100){
+        if (contador % 3 === 0 && contador % 5 === 0){
+            console.log(`${contador} - PING PONG`);
+        }else if (contador % 3 === 0){
+            console.log(`${contador} - PING`); //`${contador} - PING` (Esta dizendo qual contador é para imprimir, concatenando string e variavel)
+        }else if (contador % 5 === 0) {
+            console.log(`${contador} - PONG`); 
+        }
+        ++contador;
+    }
+//__________________________________________________________// 
+
+var nome = 'Darik';{
+    console.log(nome);
+}
+
+var idade = 0
+         console.log (idade < 12 ? 'menor de idade ' : 'maior de idade');
+
+
+
+         
+
+
+
+
+    </script>
+</body>
+</html>

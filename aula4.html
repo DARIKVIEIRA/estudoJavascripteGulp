@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+ console.log('Dárik Vieira');
+
+ var nome = 'Darik Baiense';
+ console.log(nome);
+
+
+ var idade = 23;
+ console.log(idade + 10);
+
+ var salario1 = 1000;
+ console.log(salario1*2);
+
+ var salario01 = 100;
+ var salario02 = 200;
+ console.log(salario01+salario02);
+
+//Redeclarando a variavel//
+ var salario1 = 2000;
+ console.log(salario1);
+//-------------------------------//
+ 
+var nome = 'Darik Vieira Baiense';
+console.log(nome);
+
+console.log(nome.length); //length faz a contagem dos caracteres 
+
+console.log('Darik'.length); //A string nem precisa está dentro de uma váriavel   
+
+console.log('Vieiraaaaaa'.length); //length faz a contagem dos caracteres 
+
+console.log(nome.toUpperCase()); //Deixa as letras maiuscula
+
+console.log(nome.toLowerCase()); //Deixa as letras minusculas
+
+console.log(nome.indexOf('rik')); //Metodo indexOf retorna o valor que vc procura n string
+
+console.log(nome.replace('Darik','Natalia')); //Metodo Replace ele vai substituir 
+
+console.log(nome.slice(2,5)); //Metodo slice ele vai retornar uma fatia da string
+
+//--------------------Teste----------------//
+
+var jogo = 'Xadrez';
+
+console.log(jogo.length);
+
+console.log(jogo.toUpperCase());
+
+console.log(jogo.toLowerCase());
+
+console.log(jogo.slice(0,3));
+
+console.log(jogo.replace('dre','DRE'));
+
+console.log(jogo.indexOf('re'));
+
+
+
+var casa = '  Apartamento   ';
+
+console.log(casa.length);
+
+console.log(casa.replace('tam','tem'));
+
+console.log(casa.indexOf('tam'));
+
+console.log(casa.trim());
+
+console.log(casa.toUpperCase()); 
+
+console.log(casa.slice(2,5));
+
+//---------Concatenação--------------//
+
+var canalYoutube = '   aprendendo Javascript   ';
+console.log(canalYoutube);
+
+console.log(canalYoutube.trim()); //Metodo trim retira os espaços da string
+
+var autor = 'Gerson';
+
+console.log('Estou ' + canalYoutube.trim() + ' Com Gerson '); //Concatenando string 
+
+console.log(`Eu estou ${canalYoutube.trim()} com ${autor}`); //Concatenando string forma mais facil
+
+//----------Teste concatenação------------//
+var memoria = 'ram'
+var pc = 'computador'
+var my = 'tem'
+
+console.log(`Meu ${pc} ${my} 16 gigas de memoria ${memoria}`);
+
+console.log('Meu '+ pc + my + ' 16 gigas de memoria' + memoria);
+
+
+//----------Operadores matemáticos------------//
+
+console.log(20+5);
+console.log(25+3);
+console.log(20-2-4);
+console.log(2*3);
+console.log(10/2);
+console.log(10%2);
+console.log(10%3); //retorna o valor restante de uma divisão 3+3+3=9 falta 1 pra 10
+
+var a = 1;
+a = a + 1;
+
+console.log(a++); //acrescenta no proximo print
+console.log(a);
+console.log(++a); //acrescenta já 
+
+var b = 10;
+b = 10 + 2;
+
+console.log(b);
+console.log(++b);
+console.log(b++);
+console.log(b);
+
+//----------Booleanos (True or False)------------//
+var a = true;
+console.log(true);
+var b = false;
+console.log(false);
+
+//----------Booleanos (< ou > menor ou maior )------------//
+console.log('3 < 5',3 < 5);
+console.log('3 > 5', 3 > 5);
+
+//----------Booleanos (<= / >= maior ou igual, menor ou igual)------------//
+console.log('5 >= 5',5 >= 5);  // Maior ou igual
+console.log('5 <= 6', 5 <= 6);
+console.log('5 <= 3', 5 <= 3);
+
+//----------Booleanos (!= diferente)------------//
+console.log('10 != 10',10 != 10); //false 
+
+//----------Booleanos (== igual)------------//
+console.log('4 == 4',4 == 4);
+console.log('5 == 4',5 == 4);
+
+//----------Booleanos  com string (== igual)------------//
+var nome1 = 'Darik';
+var nome2 = 'Vieira';
+console.log('nome1 == nome2', nome1 == nome2);
+console.log('nome1 != nome2', nome1 != nome2);
+
+//----------Booleanos  com string (=== é uma comparação mais forte)------------//
+console.log('4 == 4',4 == 4); //true
+console.log('4' === 4); //false
+
+//exercicio//
+var boot = '  computador lerdo  '
+var botao = 'Meu'
+var e = 'é'
+var tm = 'tem'
+var num = 42
+console.log(boot.trim());
+
+console.log(boot.length);
+
+console.log(boot.slice(4,5));
+
+console.log(boot.replace('computador','Programador'));
+
+console.log(boot.indexOf('puta'));
+
+console.log(`${botao.trim()} ${boot.trim()} ${e} muito lerdo `);
+
+console.log(`Darik tem o ${boot.trim()}`);
+
+console.log(`Darik vieira ${tm} o sapato bonito e calça ${num}`);
+
+//----------Booleanos  com string ( ! e !! negação )------------//
+
+var a = (false);
+var b = (true);
+
+console.log('!a',!a);
+console.log('!!a',!!a);
+console.log('!null',!null);
+console.log('!!null',!!null);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
