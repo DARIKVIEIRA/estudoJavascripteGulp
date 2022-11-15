@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Loop While é uma função JavaScript que executa um codigo enquanto ela for verdadeira
+         a diferenca do IF que executa se for verdadeira, o While fica repetindo ele, até que seja falsa 
+         ou que pare na mão
+        */
+         var contador = 0 ; //Cria uma variavel contador inciando no zero
+         while (contador < 5){ //Enquanto o contador for menor que 5 ele executa
+            console.log(contador); //contador e acrescenta + 1
+            ++contador; //acrescenta +1
+         }
+
+         var contador = 0 
+         while(contador < 5){ //ele executou
+            if (contador === 3) { //quando chegou no loop e chegou a 3 ele sai sem executar o codigo abaixo
+                break; // ele sai aqui
+            };
+            console.log(contador);
+            ++contador;
+         }
+
+
+         var contador = 0;
+         while(contador < 100){
+            if (contador %3 === 0 && contador % 5 === 0){
+                console.log(`${contador} - PING PONG`)
+            }else if(contador % 3 === 0){
+                console.log(`${contador} - PING`);
+            }else if (contador % 5 === 0){
+                console.log(`${contador} - PONG`);
+            }
+            ++contador;
+         }
+
+         //--------Loop For-------//
+
+        /* É semelhante ao While mas não precisa ficar colocando contador*/contador
+        for (var contador = 0; contador <10; contador++){
+            console.log(contador);
+        }
+         //O for é bom para interar sobre um arrey
+
+        var numerosAleatorios = [3,4,5,7,6,10,11];
+        for(var contador = 0; contador < numerosAleatorios.length; //contador vai percorrer até a quantidade de numeros desse arrey
+        contador++){
+            console.log(`${contador} - ${numerosAleatorios[contador]}`); //imprimir a posição do arrey que quer imprimir
+        }
+     //           |inicializador|               |condicional|    interação
+        for (var i = numerosAleatorios.length -1; i>0;          i--){
+            console.log(`Posição ${i} com descremeno: ${numerosAleatorios[i]}`);
+        }
+
+        //--------Fazendo a inicialização fora-----------//
+
+        var i = 0;
+        for (; i < numerosAleatorios.length;){
+            console.log(`Sem valor inicial e incremento: ${numerosAleatorios[i]}`);
+            i++;
+        }   
+
+        //--------- Inicialização dentro------//
+        var i = 0;
+        for (; i < numerosAleatorios.length; i++){
+            console.log(`Sem valor inicial e incremento: ${numerosAleatorios[i]}`);
+        }   
+
+        //para trabalhar com for basta ter uma expressão boleana//
+
+        var condicao = true;
+        var contador = 1;
+
+        for (; condicao;){
+            if(contador % 5 === 0){
+                condicao = false;
+            }
+            console.log(`condição booleana simples: ${contador}`);
+            ++contador;
+        }
+  
+        //--------Break-------//
+        for (var i = 0; i < 10; i++){
+            if (i === 6){
+                break;
+            }
+            console.log(`Utilizando break ${i}`);
+        }
+        //--------Continue---------//
+        for (var i = 0; i < 10; i++){
+            if (i % 2 !== 0){
+                continue;
+            }
+            console.log('Utilizando continue',i);
+        }
+
+
+
+    </script>
+</body>
+</html>

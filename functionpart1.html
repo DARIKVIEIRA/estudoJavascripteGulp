@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //----------Function---------//
+        //Sinataxe de Funcition//
+        /*Escreva a palavra reservada (Function), em 
+        seguida o nome dela que voce quer da (escreva)
+         o () PARA passar os parametros
+         e abre {} dentro estará seu codigo e quando 
+         chamar a função ele será executado*/
+ /*
+        function escreva(){
+            console.log('Olá, Programador a bordo!')
+        }
+
+        //Chamando a função escreva para exibir
+        escreva()
+        escreva()
+
+        function nome(){
+            console.log('Olá Dárik bom dia !')
+        }
+        nome();
+
+
+        function escrevaMensagem (mensagem){
+            console.log(mensagem);
+        }
+
+        escrevaMensagem('Hello World!');
+        escrevaMensagem('Darik Vieira')
+        //o valor 'Hello World!' vai receber pelo parametro(mensagem)
+        // e vai exibir quando eu chamar o parametro
+        
+        //----Funçoes que retorna valores----//
+
+        function soma (a, b){ // o A e o B que vou somar
+            return a + b; // Estou retornando uma soma entre as duas variaveis 
+        }
+        var resultadoSoma = soma(10, 5); //Armazenei na variavel resultadoSoma 
+        // e agora a variavel detem o valor da soma de (10 + 5) ou seja a + b
+        console.log(resultadoSoma); //agora imprimir o resultado da soma 
+        
+
+        function divisão(c, e){
+            return c / e;
+        }
+        var resultadoDivisao = divisão(10, 2);
+        console.log(resultadoDivisao);
+//Posso também imprimir direto
+        //console.log(divisão(10,2));
+        */
+
+        //-----Arrey function----//
+/*
+    function somaTudo(numero){ //temos uma função soma tudo que recebe um parametro
+        var total = 0; //ela que vai ficar emplementando cada valor
+        for (var num of numeros){ //aqui dentro faz a soma da variavel total
+            total = total + num; //total é igual a ela + num e assim sucessivamente
+        }
+        return total;
+    }
+    //o arrey pode está fora também
+    var arreyNumeros = [3,4,5,6,7,8,10];
+    var resultado = somaTudp(arreyNumeros);
+ // var resultado= somaTudo([3,4,5,6,7,8,10]); //está armazenando na variavel resultado o somaTudo
+    console.log(resultado); //imprimir o resultado da soma dos numeros
+*/
+
+/*
+    function somaTudo(numero){
+        var total = 0;
+
+        for (var num of numeros){
+            total = total + num;
+        }
+        return total;
+    }
+    
+    var arreyNumeros = [3,4,2,4,5,6,3,2,3];
+    var resultado = somaTudo(arreyNumeros);
+    console.log('somaTudo', resultado);
+    */
+
+    function escreverEndereço(rua,cidade,pais,...complementos){
+        console.log(rua);
+        console.log(cidade);
+        console.log(pais);
+        console.log(complementos);
+    }
+    escreverEndereço('Rua Cascais','Portugal','Europa','Darik','Vieira')
+
+
+
+
+
+
+    </script>
+</body>
+</html>

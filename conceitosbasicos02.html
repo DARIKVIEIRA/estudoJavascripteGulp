@@ -195,6 +195,60 @@ console.log('!!a',!!a);
 console.log('!null',!null);
 console.log('!!null',!!null);
 
+//---------Operador ternário----------//
+var idade = 16
+console.log(idade >= 18 ?'Maior de idade' : 'Menor de idade');
+
+var cor = 'azul'
+    switch (cor) {
+        case 'verde':
+            console.log('Cor verde');            
+            break;
+        case 'roxo':
+            console.log('Cor roxo');
+            break;
+        case 'laranja':
+            console.log('Cor azul');
+            break;
+        default:  //se não cair em nenhum cai nesse 
+            console.log('Cor invalida')
+            break;
+    }
+
+var idade10 = '23'
+    switch (idade10){
+        case '23':
+            console.log('Tem 23 anos');
+            break;
+        case '22':
+            console.log('Tem 22 anos');
+            break;
+    }
+
+
+switch ('roxo'){
+    case 'rosa':
+    case 'azul':
+    case 'verde':
+        console.log('cores');
+        break;
+    
+    case 'Darik':
+    case '33':
+    case 'vieira':
+        console.log('Esse é o Darik');
+        break;
+    default:
+        console.log('Não é ninguem');
+        break;
+}
+
+        //metodo JOIN ele junta todos os valores do arrey e transforma em uma string
+        // só dizer qual é o separados
+
+        console.log(numero.join('--'));
+        console.log(numero.join('-'));
+        console.log(numero.join(' '));
 
 
 
