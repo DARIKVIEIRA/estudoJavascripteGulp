@@ -12,6 +12,8 @@
          a diferenca do IF que executa se for verdadeira, o While fica repetindo ele, até que seja falsa 
          ou que pare na mão
         */
+
+        /*
          var contador = 0 ; //Cria uma variavel contador inciando no zero
          while (contador < 5){ //Enquanto o contador for menor que 5 ele executa
             console.log(contador); //contador e acrescenta + 1
@@ -42,7 +44,8 @@
 
          //--------Loop For-------//
 
-        /* É semelhante ao While mas não precisa ficar colocando contador*/contador
+        /* É semelhante ao While mas não precisa ficar colocando contador*/
+         /*
         for (var contador = 0; contador <10; contador++){
             console.log(contador);
         }
@@ -99,6 +102,139 @@
             }
             console.log('Utilizando continue',i);
         }
+        */
+         
+        var contador = 0;
+            while (contador < 5){
+                console.log(contador);
+                ++contador;
+            }
+
+        var contador = 5;
+            while (contador < 10){
+                console.log(contador);
+                ++contador;
+            }
+
+        var conta = 1;
+            while(conta < 4){
+                console.log(conta);
+                ++conta;
+            }
+
+        var contador = 0 ;
+            while (contador < 5){
+                if (contador === 4){
+                    break;
+                }
+                console.log(contador);
+                ++contador
+            }
+
+        var contador = 0; 
+            while (contador < 10){
+                console.log(contador);
+                ++contador;
+            }
+
+        var contador = 0;
+            while(contador <= 5){
+                console.log(contador);
+                ++contador;
+            }
+
+        var contador = 1;
+            while(contador <5){
+                if (contador === 4){
+                    break;
+                }
+                console.log(contador);
+                ++contador;
+            }
+     //--------------------------------------//
+
+    var contador = 0;
+            while (contador < 100){
+                if (contador %3 === 0 && contador %5 === 0){
+                    console.log(`${contador} - PING PONG`);
+                }else if (contador %5 === 0 ){
+                    console.log(`${contador} - PONG`);
+                }else if (contador %3 === 0){
+                    console.log(`${contador} - PING`);
+                }
+                ++contador;
+            }
+//------------------FOR---------------------------------------//
+
+            for (var contador =0; contador < 10; contador++){
+                console.log(contador);
+            }
+
+            for (var conta = 0; conta <5; conta++){
+                console.log(`${conta} - Darik`);
+            }
+//----------------iMPRESSÃO DO VALOR DE UM ARREY é incrementando com ++--------------
+            var numerosAleatorio = [3,4,5,5,6,7,8,45,23];
+            for(var contador = 0; contador < numerosAleatorio.length;
+            contador ++){
+                console.log(`${contador}- ${numerosAleatorio[contador]}
+                `);
+            }
+//-----------------DECREMENTO COM  O FOR ------------------//
+
+            for (var i = numerosAleatorio.length -1; i >= 0; i --){
+                console.log(`Posição ${i} com decremento: ${
+                    numerosAleatorio[1]}`);
+            }
+//------------LOOP COM CONDIÇÕES BOELLEANA-------------//
+            var condicao = true;
+            var contador = 1;
+
+            for(; condicao; ){
+                if (contador % 5 === 0){
+                    condicao = false;
+                }
+                console.log(`condição booleana simples: ${contador}`);
+                ++contador;
+            }
+//-------------Usando break----------------//
+            for (var i = 0; i < 10; i++){
+                if( i === 5){
+                    break;
+                }
+                console.log(`Utilizando break ${i}`);
+            }
+
+//------------Usando continue------------//
+
+            for (var i = 0; i < 50; i++){
+                if (i % 2 !==0 ){
+                    continue;
+                }
+                console.log('utilizando continue',i);
+            }
+//-------------For of--------------//
+var numerosAleatorio = [3,4,65,5,6,7,8,45,23];
+            for(var num of numerosAleatorio){
+                console.log('For of', num);
+            }
+//-------------For normal fazendo mesma coisa--------------//  
+            var numerosAleatorio = [3,4,65,5,6,7,8,45,23];
+            for(var i= 0; i < numerosAleatorio.length; i++){
+                console.log('For normal', numerosAleatorio[i]);
+            }
+    
+//-----------PING PONG USANDO FOR ---------------//
+
+            for (var i = 0; i < 100; i++){
+                if ( i % 3 === 0 && i % 5 === 0){
+                    console.log(i, 'PING PONG');
+                }else if (i % 3 === 0){
+                    console.log(i, 'PING');
+                }else if (i % 5 === 0){
+                    console.log(i, 'PONG');
+                }
+            }
 
 
 
